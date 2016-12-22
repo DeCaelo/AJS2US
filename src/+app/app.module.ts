@@ -9,10 +9,12 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent, XLargeDirective } from './app.component';
+import { SeoComponent } from './seo.component';
 
 
 @NgModule({
-  declarations: [ AppComponent, XLargeDirective ],
+  bootstrap: [ AppComponent, SeoComponent ],
+  declarations: [ AppComponent, XLargeDirective, SeoComponent ],
   imports: [
     SharedModule,
     HomeModule,
